@@ -49,6 +49,33 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-extensions"
+version = "3.2.3"
+description = "Extensions for Django"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "django-extensions-3.2.3.tar.gz", hash = "sha256:44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a"},
+    {file = "django_extensions-3.2.3-py3-none-any.whl", hash = "sha256:9600b7562f79a92cbf1fde6403c04fee314608fefbb595502e34383ae8203401"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
+name = "django-urls"
+version = "1.1.3"
+description = "URL decorator for django views"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "django_urls-1.1.3.tar.gz", hash = "sha256:45fe4791add75c50196854fce303633f7ec4bbdeb4efc706943e442f18290e1c"},
+]
+
+[package.dependencies]
+django = ">=2.0"
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -256,4 +283,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ee0d8fe8a8a66dc735ca10332d4f6b1591ea1db778a82f127665c4c6ea7384aa"
+content-hash = "d0f55650ee1765c6b10fbca95878f432b363b5b17ba38bed54214c994b8b6b51"
