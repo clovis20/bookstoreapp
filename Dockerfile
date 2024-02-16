@@ -44,7 +44,6 @@ RUN apt-get update \
 
 
 RUN pip install poetry
-RUN poetry init
 
 # install postgres dependencies inside of Docker
 RUN apt-get update \
