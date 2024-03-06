@@ -36,19 +36,19 @@ RUN apt-get update \
         # deps for installing poetry
         curl \
         # deps for building python deps
-        build-essential
+        build-essential \
+        libpq-dev
 
 # install poetry - respects $POETRY_VERSION & $POETRY_HOME
 #RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 #RUN curl -sSL https://install.python-poetry.org | python3 -
 
 
-RUN pip install poetry
+RUN pip3 install poetry
 
 # install postgres dependencies inside of Docker
 RUN apt-get update \
-    && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2
+    && apt-get -y install libpq-dev gcc 
 
 # copy project requirement files here to ensure they will be cached.
 WORKDIR $PYSETUP_PATH
