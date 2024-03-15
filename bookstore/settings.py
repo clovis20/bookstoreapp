@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-g^vgv$xduyid3b%k-f1mf46*-j!*g^lehz6k&clmceonh-hn)r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ebac-bookstoreapi-17b6e0c74507.herokuapp.com']
 
 
 # Application definition
@@ -160,4 +160,3 @@ REST_FRAMEWORK = {
 
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ebac-bookstoreapi-17b6e0c74507.herokuapp.com']
